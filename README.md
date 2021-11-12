@@ -3,7 +3,7 @@
     
 ## Data Preprocessing
 <p align="center">  
-  <img src="" width="70%">
+  <img src="https://user-images.githubusercontent.com/55169156/141409033-255dbe85-4dba-416e-865b-2cd68ab9eb69.jpg" width="70%">
 </p>
 <p align="center">< 그림 1 : MFCC ></p>
   
@@ -13,7 +13,7 @@
  본 논문에서 적용한 수치는 샘플링 레이트, Hop Length, n_mels, n_fft이고 샘플링 레이트는 이산적 신호를 얻기 위한 단위 시간당 샘플링 횟수를 뜻하고, Hop Length는 음성의 magnitude를 얼마나 겹처서 잘라서 보여주는 지를 뜻하고, n_mels는 주파수를 나눠주는 수이고, n_fft는 음성 프레임의 길이를 결정하는 것이다. 각 수치는 16,000, 256, 40, 512이다.
  </p>
  <p align="center">
-  <img src="STFT.jpg" width="60%">
+  <img src="https://user-images.githubusercontent.com/55169156/141409039-46151355-87ee-44c9-9a76-1725658eb1ab.jpg" width="60%">
  </p>
  <p align="center">< 그림 2 : STFT  ></p>
  ### Windowing
@@ -21,7 +21,7 @@
   Window 함수는 시간 연속적인 신호의 특정 구간을 취하여 분석하기 위해 사용되며, 다양한 종류가 있으나 목적과 신호특성에 따라 최적의 Window 함수를 선택하는 것이 중요하다. 본 논문에서는 일반적으로 사용하는 Hamming 함수와 Hanning 함수중 Hanning 함수를 사용하여 신호의 불연속성을 제거하는 작업을 거쳤다. 
  </p>
   <p align="center">
-  <img src="WindowFuction.jpg" width="60%">
+  <img src="https://user-images.githubusercontent.com/55169156/141409044-b60f6222-3cc0-4d34-b787-47cd5939e73f.jpg" width="60%">
  </p>
  <p align="center">< 그림 3 : Windowing  ></p>
  ### MFCC
@@ -32,7 +32,7 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
 아래의 그림은 MFCC의 전체적인  과정이다.
   </p>
 <p align="center">  
-  <img src="MFCC.jpg" width="60%">
+  <img src="https://user-images.githubusercontent.com/55169156/141409027-cc8a46f5-e440-45d2-a542-052fa8c7eaf2.jpg" width="60%">
 </p>
 <p align="center">< 그림 4 : MFCC 동작 과정 ></p>  
  사람마다 개개인의 고유한 DNA 및 지문을 가지고 있듯이, 각 사람마다 목소리의 고유 주파수, 진폭 등이 다르다는 특성(MFCC)을 이용하여 개인의 신분을 확인 할 수 있는 화자 인식이 가능하다.   
@@ -141,7 +141,7 @@ import pandas as pd
     <td align="center"> 학습방법</td>
   </tr>
   <tr>
-    <td align="center"><img src="Learing.jpg"></td>  
+    <td align="center"><img src="https://user-images.githubusercontent.com/55169156/141409019-d3eeef2f-e9a0-4f0c-9abd-a6f21bb93ec5.jpg"></td>  
   </tr>
 </table>
 </p>
@@ -158,7 +158,7 @@ import pandas as pd
     <td align="center"> 사용자별 화자인식 정확도 </td>
   </tr>
   <tr>
-    <td align="center"><img src="Result.jpg"></td>    
+    <td align="center"><img src="https://user-images.githubusercontent.com/55169156/141409035-f012029f-c27d-46fc-b7db-17f9b3da1ca3.jpg"></td>    
   </tr>
 </table>
 </p>
