@@ -3,7 +3,7 @@
     
 ## Data Preprocessing
 <p align="center">  
-  <img src="![Cnn_configuration](https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg)
+  <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg
 " width="70%">
 </p>
 <p align="center">< 그림 1 : MFCC ></p>
