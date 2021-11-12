@@ -25,6 +25,7 @@
   <img src="https://user-images.githubusercontent.com/55169156/141409044-b60f6222-3cc0-4d34-b787-47cd5939e73f.jpg" width="60%">
  </p>
  <p align="center">< 그림 3 : Windowing  ></p>
+
 ### MFCC
 <p>
  `MFCC`는 Mel Frequency Cepstrum Coefficient의 약자로서 음성인식 분야에서 널리 사용되는 알고리즘이다.   
