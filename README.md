@@ -3,7 +3,7 @@
     
 ## Data Preprocessing
 <p align="center">  
-  <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg" width="70%">
+  <img src="" width="70%">
 </p>
 <p align="center">< 그림 1 : MFCC ></p>
   
@@ -44,7 +44,7 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
  </p>
  ## CNN Model Structure
 <p align="center">
-  <img src="Cnn_Model_Structure.jpg">
+  <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg">
 </p>
 <p align="center">< 그림 5 : CNN Model Structure ></p> 
  ## Data Collection
