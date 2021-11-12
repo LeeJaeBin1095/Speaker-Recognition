@@ -16,7 +16,8 @@
   <img src="https://user-images.githubusercontent.com/55169156/141409039-46151355-87ee-44c9-9a76-1725658eb1ab.jpg" width="60%">
  </p>
  <p align="center">< 그림 2 : STFT  ></p>
- ### Windowing
+ 
+### Windowing
  <p>
   Window 함수는 시간 연속적인 신호의 특정 구간을 취하여 분석하기 위해 사용되며, 다양한 종류가 있으나 목적과 신호특성에 따라 최적의 Window 함수를 선택하는 것이 중요하다. 본 논문에서는 일반적으로 사용하는 Hamming 함수와 Hanning 함수중 Hanning 함수를 사용하여 신호의 불연속성을 제거하는 작업을 거쳤다. 
  </p>
@@ -24,7 +25,7 @@
   <img src="https://user-images.githubusercontent.com/55169156/141409044-b60f6222-3cc0-4d34-b787-47cd5939e73f.jpg" width="60%">
  </p>
  <p align="center">< 그림 3 : Windowing  ></p>
- ### MFCC
+### MFCC
 <p>
  `MFCC`는 Mel Frequency Cepstrum Coefficient의 약자로서 음성인식 분야에서 널리 사용되는 알고리즘이다.   
 MFCC는 소리의 특징을 추출하는 알고리즘으로서 입력받은 소리를 일반적으로 20ms-40ms정도의 작은 프레임으로 쪼개는 과정을 거치고 이러한 프레임들의 스펙트럼을 분석하여 특징을 추출하는 기법이다.   
@@ -38,11 +39,11 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
  사람마다 개개인의 고유한 DNA 및 지문을 가지고 있듯이, 각 사람마다 목소리의 고유 주파수, 진폭 등이 다르다는 특성(MFCC)을 이용하여 개인의 신분을 확인 할 수 있는 화자 인식이 가능하다.   
 본 프로젝트에서는 음성 전처리 과정을 MFCC를 사용해서 진행하였다.
  </p>
-  ### Liftering
+### Liftering
  <p>
  주변 소음을 제거하여 높은 인식률을 보이는 MFCC를 잡음이 있는 환경에서 성능을 높이기 위해 De-Emphasize 하는 Lifter 함수를 적용하였다. Lifter 연산은 전체 Cepstrum에서 원하는 위치의 직사각형 Window를 곱해 분석할 주파수 영역을 선택하는 주파수 영역에서의 필터링 연산이다.
  </p>
- ## CNN Model Structure
+## CNN Model Structure
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg">
 </p>
