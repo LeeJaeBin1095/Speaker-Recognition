@@ -40,10 +40,12 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
  사람마다 개개인의 고유한 DNA 및 지문을 가지고 있듯이, 각 사람마다 목소리의 고유 주파수, 진폭 등이 다르다는 특성(MFCC)을 이용하여 개인의 신분을 확인 할 수 있는 화자 인식이 가능하다.   
 본 프로젝트에서는 음성 전처리 과정을 MFCC를 사용해서 진행하였다.
  </p>
+ 
 ### Liftering
  <p>
  주변 소음을 제거하여 높은 인식률을 보이는 MFCC를 잡음이 있는 환경에서 성능을 높이기 위해 De-Emphasize 하는 Lifter 함수를 적용하였다. Lifter 연산은 전체 Cepstrum에서 원하는 위치의 직사각형 Window를 곱해 분석할 주파수 영역을 선택하는 주파수 영역에서의 필터링 연산이다.
  </p>
+ 
 ## CNN Model Structure
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg">
@@ -117,6 +119,7 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
     </tr>
   </table>
 </p>
+
 ## Library
 ```python
 import pyaudio                     # Record audio from mic
@@ -131,6 +134,7 @@ import keras                       # Use keras
 import numpy as np
 import pandas as pd
 ```
+
 ## Learning process
 <p>
 <table>  
@@ -148,6 +152,7 @@ import pandas as pd
 </table>
 </p>
 본 논문의 실험에 사용한 음성 데이터 셋은 11명의 화자에게 문장 독립방식 화자 인식을 위한 통일된 15개의 문장과 사용자가 임의로 정한 5개의 문장, 총 사용자별로 20개씩 220개의 5초의 음성 데이터로 구성되어 있다. 이 음성 데이터들은 44.1khz로 샘플링된 후 wav 파일로 변환 후 3장에서 제안된 전처리 과정을 통해 npy 파일로 변환 후 임의로 학습 데이터 80%와 테스트데이터 20%로 비율을 설정하여 제안된 Conv1D 모델을 통해 화자별 음성 데이터의 학습을 진행한 후 화자별로 테스트를 진행하였다.
+
 ## Result
 <p>
 <table>  
