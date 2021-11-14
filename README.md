@@ -50,7 +50,8 @@ MFCC를 이용한 Features 추출은 음정이 변해도 어느 정도 일정하
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55169156/141408608-6333e9bd-88b0-47de-9241-ddbd278b2d43.jpg">
 </p>
-<p align="center">< 그림 5 : CNN Model Structure ></p> 
+<p align="center">< 그림 5 : CNN Model Structure ></p>
+ 
  ## Data Collection
  <p>
    본 논문의 실험에 사용한 음성 데이터 셋은 11명의 화자에게 문장 독립방식 화자 인식을 위한 통일된 15개의 문장과 사용자가 임의로 정한 5개의 문장, 총 사용자별로 20개씩 220개의 5초의 음성 데이터로 구성되어 있다. 이 음성 데이터들은 44.1khz로 샘플링된 후 wav 파일로 변환 후 3장에서 제안된 전처리 과정을 통해 npy 파일로 변환 후 임의로 학습 데이터 80%와 테스트데이터 20%로 비율을 설정하여 제안된 Conv1D 모델을 통해 화자별 음성 데이터의 학습을 진행한 후 화자별로 테스트를 진행하였다.
